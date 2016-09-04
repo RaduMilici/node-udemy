@@ -1,0 +1,22 @@
+{
+  "name": "node-udemy",
+  "version": "1.0.0",
+  "description": "NodeJS udemy tutorial",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaduMilici/node-udemy.git"
+  },
+  "author": "Radu Milici",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaduMilici/node-udemy/issues"
+  },
+  "homepage": "https://github.com/RaduMilici/node-udemy#readme",
+  "dependencies": {
+    "moment": "^2.14.1"
+  }
+}

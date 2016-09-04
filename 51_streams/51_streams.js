@@ -4,7 +4,6 @@ var readable = fs.createReadStream(__dirname + '/greet.txt',
     encoding: 'utf8', 
     highWaterMark: 1024 // = 1 kylobyte (how big we want each chunk to be in bytes)
   });
-  
 var writable = fs.createWriteStream(__dirname + '/greetCopy.txt');
 
 readable.on('data', function(chunk){
