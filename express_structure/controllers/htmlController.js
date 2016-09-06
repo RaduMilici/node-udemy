@@ -1,7 +1,7 @@
 var bodyParser = require('body-parser'); // express middleware
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
-module.exports = function(app){
+module.exports = function(app, dbResult){
   
   app.get('/', function(req, res){
     res.render('index');
@@ -12,7 +12,12 @@ module.exports = function(app){
   });
   
   app.post('/person', urlencodedParser, function(req, res){
-    res.send('Thank you!');
+    res.json(req.body);
   });
+  
+  app.get('/angular', function(req, res){
+    res.render('angular', { serverPeople: dbResult });
+  });
+  
   
 };

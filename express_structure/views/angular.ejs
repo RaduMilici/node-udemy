@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <link rel="stylesheet" href="assets/style.css" type="text/css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    </head>
+    <body ng-controller="ctrl">
+      
+        <h1>Data binding demo:</h1>
+        <p>this page was rendered serverside by node</p>
+        <input type="text" ng-model="input" id="age" name="age"/>  
+        <h1>{{input}}</h1>
+        
+        <script type="text/javascript" src="/assets/app.js"></script>
+        <script>
+            var serverPeople = <%- JSON.stringify(serverPeople) %>
+        </script>
+        
+    </body>
+</html>
