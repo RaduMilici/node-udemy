@@ -6,7 +6,7 @@ app.get('/', function(req, res){
   res.send('<html><head><title>hello</title></head><body><h1>hello world!</h1><body></html>');
 });
 
-app.get('/person/:name/:age', function(req, res){ // 'name' and 'age' could be anything
+app.get('/person/:name/:age', function(req, res){ // 'name' and 'age' params could be anything
   res.send(`
   <html>
     <head></head>
